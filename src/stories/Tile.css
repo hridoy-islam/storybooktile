@@ -1,0 +1,30 @@
+.sellbg,
+.buybg {
+  color: #000;
+  border-radius: 5px;
+}
+
+.sellbg:hover {
+  background: red;
+  transition: all 2s ease-out, step-start, cubic-bezier(0.1, 0.7, 1, 1);
+  color: white;
+}
+
+.sellRevertBg {
+  background: red;
+  transition: all 2s ease-out, step-start, cubic-bezier(0.1, 0.7, 1, 1);
+  color: white;
+}
+
+.buybg:hover {
+  background: blue;
+  color: white;
+}
+.buyRevertBg {
+  background: blue;
+  color: white;
+}
+.arrowIcon {
+  margin: 17px 0 0 0;
+  color: red;
+}
