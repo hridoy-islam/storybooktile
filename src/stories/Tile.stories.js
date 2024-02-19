@@ -1,24 +1,35 @@
 import { TILE } from "./Tile";
 
-// More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 export default {
   title: "Tile",
   component: TILE,
   parameters: {
-    // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
     layout: "centered",
+    // Optional parameter to generate documentation automatically
+    // More info: https://storybook.js.org/docs/react/writing-docs/docgen
+    docs: {
+      description: {
+        component: "This is a TILE component.",
+      },
+    },
   },
-  // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
-  tags: ["autodocs"],
-  // More on argTypes: https://storybook.js.org/docs/api/argtypes
+  // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
-    backgroundColor: { control: "color" },
+    // sellColor: { control: "color" },
+    // buyColor: { control: "color" },
   },
 };
 
-// More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
-export const Tile = {
+export const Rfq = {
   args: {
-    label: "tile",
+    label: "Tile",
+    title: "USDT / USD",
+    sell_rate: 0.99,
+    sell_price: 99,
+    sell_item: 5,
+    buy_rate: 1.0,
+    buy_price: 1,
+    buy_item: 1,
+    amount: 1000000,
   },
 };

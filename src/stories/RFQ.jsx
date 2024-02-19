@@ -34,7 +34,16 @@ function LinearProgressWithLabel(props) {
   );
 }
 
-export const RFQ = () => {
+export const RFQ = ({
+  title,
+  sell_rate,
+  sell_price,
+  sell_item,
+  buy_rate,
+  buy_price,
+  buy_item,
+  amount,
+}) => {
   const [initiate, setInitiate] = useState(false);
   const [progress, setProgress] = useState(100); // Initial progress percentage
   const [countdown, setCountdown] = useState(10); // Initial countdown value
@@ -96,7 +105,7 @@ export const RFQ = () => {
               width: "450px",
             }}
           >
-            <h2 style={{ marginBottom: "15px" }}>USDT/USD</h2>
+            <h2 style={{ marginBottom: "15px" }}>{title}</h2>
             <div
               style={{
                 display: "flex",
@@ -121,13 +130,15 @@ export const RFQ = () => {
                 >
                   <p style={{ marginRight: "2px" }}>
                     {initiate ? "SELL" : " SELL"} <br />
-                    {initiate && "20"}
+                    {initiate && sell_rate}
                   </p>
 
                   {initiate && (
                     <>
-                      <p style={{ fontSize: "36px", gap: "0px" }}>30</p>
-                      <sub style={{ marginTop: "20px" }}>2</sub>
+                      <p style={{ fontSize: "36px", gap: "0px" }}>
+                        {sell_price}
+                      </p>
+                      <sub style={{ marginTop: "20px" }}>{sell_item}</sub>
                     </>
                   )}
                 </div>
@@ -159,12 +170,14 @@ export const RFQ = () => {
                 >
                   <p style={{ marginRight: "2px" }}>
                     {initiate ? "BUY" : " BUY"} <br />
-                    {initiate && 1200}
+                    {initiate && buy_rate}
                   </p>
                   {initiate && (
                     <>
-                      <p style={{ fontSize: "36px", gap: "0px" }}>1000</p>
-                      <sub style={{ marginTop: "20px" }}>1</sub>
+                      <p style={{ fontSize: "36px", gap: "0px" }}>
+                        {buy_price}
+                      </p>
+                      <sub style={{ marginTop: "20px" }}>{buy_item}</sub>
                     </>
                   )}
                 </div>
@@ -178,7 +191,7 @@ export const RFQ = () => {
                   padding: "0px 8px",
                 }}
               >
-                1000
+                {amount}
               </span>
             </Box>
             {initiate && (

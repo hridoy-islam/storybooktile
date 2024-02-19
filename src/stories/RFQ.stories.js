@@ -12,7 +12,7 @@ export default {
   //tags: ["autodocs"],
   // More on argTypes: https://storybook.js.org/docs/api/argtypes
   argTypes: {
-    backgroundColor: { control: "color" },
+    // backgroundColor: { control: "color" },
   },
 };
 
@@ -20,5 +20,13 @@ export default {
 export const Rfq = {
   args: {
     label: "rfq",
+    title: "USDT / USD",
+    sell_rate: 0.99,
+    sell_price: 99,
+    sell_item: 5,
+    buy_rate: 1.0,
+    buy_price: 1,
+    buy_item: 1,
+    amount: 1000000,
   },
 };

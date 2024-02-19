@@ -1,8 +1,18 @@
+/* eslint-disable react/prop-types */
 import { Box } from "@material-ui/core";
 import { Card } from "@mui/material";
 import "./Tile.css";
 
-export const TILE = () => {
+export const TILE = ({
+  title,
+  sell_rate,
+  sell_price,
+  sell_item,
+  buy_rate,
+  buy_price,
+  buy_item,
+  amount,
+}) => {
   return (
     <div>
       <Card
@@ -14,7 +24,7 @@ export const TILE = () => {
           width: "450px",
         }}
       >
-        <h2 style={{ marginBottom: "15px" }}>USDT / USD</h2>
+        <h2 style={{ marginBottom: "15px" }}>{title}</h2>
         <div style={{ display: "flex", gap: "20px", marginBottom: "15px" }}>
           <div
             className="sellbg"
@@ -31,11 +41,11 @@ export const TILE = () => {
             >
               <p style={{ marginRight: "2px" }}>
                 SELL <br />
-                0.99
+                {sell_rate}
               </p>
 
-              <p style={{ fontSize: "36px", gap: "0px" }}>99</p>
-              <sub style={{ marginTop: "20px" }}>5</sub>
+              <p style={{ fontSize: "36px", gap: "0px" }}>{sell_price}</p>
+              <sub style={{ marginTop: "20px" }}>{sell_item}</sub>
             </div>
           </div>
           <div
@@ -53,18 +63,18 @@ export const TILE = () => {
             >
               <p style={{ marginRight: "2px" }}>
                 Buy <br />
-                1.00
+                {buy_rate}
               </p>
 
-              <p style={{ fontSize: "36px", gap: "0px" }}>01</p>
-              <sub style={{ marginTop: "20px" }}>1</sub>
+              <p style={{ fontSize: "36px", gap: "0px" }}>{buy_price}</p>
+              <sub style={{ marginTop: "20px" }}>{buy_item}</sub>
             </div>
           </div>
         </div>
         <Box style={{ textAlign: "center", margin: "0 auto" }}>
           USDT{" "}
           <span style={{ borderBottom: "1px solid black", padding: "0px 8px" }}>
-            10000
+            {amount}
           </span>
         </Box>
       </Card>
