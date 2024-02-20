@@ -195,7 +195,9 @@ export const RFQ = ({
               </span>
             </Box>
             {initiate && (
-              <Box sx={{ width: "100%", display: "flex" }}>
+              <Box
+                sx={{ width: "100%", display: "flex", fontFamily: "Roboto" }}
+              >
                 <LinearProgressWithLabel value={progress} />
                 <Box sx={{ width: "20%" }}>
                   <Button

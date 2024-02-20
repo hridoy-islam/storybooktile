@@ -71,7 +71,13 @@ export const TILE = ({
             </div>
           </div>
         </div>
-        <Box style={{ textAlign: "center", margin: "0 auto" }}>
+        <Box
+          style={{
+            textAlign: "center",
+            margin: "0 auto",
+            fontFamily: "Roboto",
+          }}
+        >
           USDT{" "}
           <span style={{ borderBottom: "1px solid black", padding: "0px 8px" }}>
             {amount}

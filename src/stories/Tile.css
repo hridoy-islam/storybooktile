@@ -2,6 +2,7 @@
 .buybg {
   color: #000;
   border-radius: 5px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
 .sellbg:hover {

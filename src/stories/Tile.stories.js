@@ -20,7 +20,7 @@ export default {
   },
 };
 
-export const Rfq = {
+export const Tile = {
   args: {
     label: "Tile",
     title: "USDT / USD",
