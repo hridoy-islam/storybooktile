@@ -27,14 +27,17 @@ export default function Notification() {
               <FormControlLabel
                 control={<Checkbox defaultChecked />}
                 label="Events and Meetups"
+                style={{ marginTop: "10px" }}
               />
               <FormControlLabel
                 control={<Checkbox defaultChecked />}
                 label="User Research Surveys"
+                style={{ marginTop: "10px" }}
               />
               <FormControlLabel
                 control={<Checkbox />}
                 label="Hatch Startup Program"
+                style={{ marginTop: "10px" }}
               />
             </FormGroup>
           </div>
@@ -58,7 +61,11 @@ export default function Notification() {
                 label="Unsubscribe me from all of the above"
               />
             </FormGroup>
-            <Button variant="contained" color="primary">
+            <Button
+              variant="contained"
+              color="primary"
+              style={{ marginTop: "15px" }}
+            >
               Update my preferences
             </Button>
           </div>

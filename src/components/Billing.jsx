@@ -1,4 +1,4 @@
-import { Card, Chip } from "@material-ui/core";
+import { Button, Card, Chip, Link } from "@material-ui/core";
 
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
@@ -35,7 +35,7 @@ export default function Billing() {
           style={{
             backgroundColor: "#FBE9E7",
             width: "33%",
-            padding: "40px 24px",
+            padding: "20px 24px",
             borderLeft: "8px solid #D84315",
           }}
           className="w-1/3 px-6 py-10 border-l-8 border-[#D84315] space-y-1"
@@ -70,7 +70,7 @@ export default function Billing() {
           style={{
             backgroundColor: "#FFF8E1",
             width: "33%",
-            padding: "40px 24px",
+            padding: "20px 24px",
             borderLeft: "8px solid #FFC107",
           }}
           className="w-1/3 px-6 py-10 border-l-8 border-[#FFC107] space-y-1"
@@ -106,7 +106,7 @@ export default function Billing() {
           style={{
             backgroundColor: "#B9F6CA",
             width: "33%",
-            padding: "40px 24px",
+            padding: "20px 24px",
             borderLeft: "8px solid #00C853",
           }}
           className="w-1/3 px-6 py-10 border-l-8 border-[#00C853] space-y-1 shadow-none"
@@ -139,47 +139,79 @@ export default function Billing() {
         </Card>
       </div>
 
-      {/* <div style={{ margin: "30px 0" }}>
+      <div style={{ margin: "30px 0" }}>
         <TableContainer component={Paper}>
-          <div style={{ display: "flex", justifyContent: "space-between" }}>
-            <h2
-              style={{ padding: "10px", fontSize: "16px", fontWeight: "bold" }}
-            >
-              Payment Methods
-            </h2>
-            <Button variant="contained" color="primary">
-              Add New Method
-            </Button>
-          </div>
-
           <Table sx={{ minWidth: 650 }} aria-label="Billing History">
             <TableHead>
               <TableRow>
-                <TableCell>Order No</TableCell>
+                <TableCell>Payment Methods</TableCell>
 
-                <TableCell align="left"></TableCell>
+                <TableCell align="right">
+                  <Button variant="contained" color="primary">
+                    Add New Method{" "}
+                  </Button>
+                </TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
-              {rows.map((row) => (
-                <TableRow
-                  key={row.orderno}
-                  sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
-                >
-                  <TableCell component="th" scope="row">
-                    {row.orderno}
-                  </TableCell>
+              <TableRow
+                sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+              >
+                <TableCell component="th" scope="row">
+                  <div style={{ display: "flex", gap: "10px" }}>
+                    <img src="../../public/visa.png" alt="" />
+                    <p>
+                      Visa card <br />
+                      Ending in 5269 07XX XXXX 8110
+                    </p>
+                  </div>
+                </TableCell>
 
-                  <TableCell align="left">
-                    <Chip color="primary" label="Default" /> |{" "}
-                    <Link href={"/"}>Edit</Link>
-                  </TableCell>
-                </TableRow>
-              ))}
+                <TableCell align="right">
+                  <Chip color="primary" label="Default" /> |{" "}
+                  <Link href={"/"}>Edit</Link>
+                </TableCell>
+              </TableRow>
+              <TableRow
+                sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+              >
+                <TableCell component="th" scope="row">
+                  <div style={{ display: "flex", gap: "10px" }}>
+                    <img src="../../public/discover.png" alt="" />
+                    <p>
+                      Discover <br />
+                      Ending in 6109 07XX XXXX 8020
+                    </p>
+                  </div>
+                </TableCell>
+
+                <TableCell align="right">
+                  <Chip variant="default" label="Make Default" /> |{" "}
+                  <Link href={"/"}>Edit</Link>
+                </TableCell>
+              </TableRow>
+              <TableRow
+                sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+              >
+                <TableCell component="th" scope="row">
+                  <div style={{ display: "flex", gap: "10px" }}>
+                    <img src="../../public/mastercard.png" alt="" />
+                    <p>
+                      Mastercard <br />
+                      Ending in 7278 07XX XXXX 4290
+                    </p>
+                  </div>
+                </TableCell>
+
+                <TableCell align="right">
+                  <Chip variant="default" label="Make Default" /> |{" "}
+                  <Link href={"/"}>Edit</Link>
+                </TableCell>
+              </TableRow>
             </TableBody>
           </Table>
         </TableContainer>
-      </div> */}
+      </div>
 
       <div>
         <TableContainer component={Paper}>
