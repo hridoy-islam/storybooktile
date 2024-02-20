@@ -20,7 +20,7 @@ export default function Security() {
               id="outlined-required"
               label="current password"
               variant="outlined"
-              style={{ width: "100%", magin: "20px 0" }}
+              style={{ width: "100%", margin: "20px 0" }}
             />
             <div className="flex gap-4 my-5">
               <TextField
@@ -28,17 +28,21 @@ export default function Security() {
                 id="outlined-required"
                 label="new password"
                 variant="outlined"
-                style={{ width: "50%", magin: "20px 0" }}
+                style={{ width: "49%", marginRight: "5px" }}
               />
               <TextField
                 required
                 id="outlined-required"
                 label="Re-enter password"
                 variant="outlined"
-                style={{ width: "50%", magin: "20px 0" }}
+                style={{ width: "49%", marginLeft: "5px" }}
               />
             </div>
-            <Button variant="contained" color="primary">
+            <Button
+              variant="contained"
+              color="primary"
+              style={{ marginTop: "20px" }}
+            >
               Change Password
             </Button>
           </div>

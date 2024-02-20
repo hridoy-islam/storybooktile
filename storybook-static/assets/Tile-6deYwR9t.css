@@ -1,0 +1,1 @@
+.sellbg,.buybg{color:#000;border-radius:5px}.sellbg:hover,.sellRevertBg{background:red;transition:all 2s ease-out,step-start,cubic-bezier(.1,.7,1,1);color:#fff}.buybg:hover,.buyRevertBg{background:#00f;color:#fff}.arrowIcon{margin:17px 0 0;color:red}

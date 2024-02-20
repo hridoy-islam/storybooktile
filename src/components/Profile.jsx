@@ -71,7 +71,7 @@ export default function Profile() {
               label="email"
               defaultValue="name@example.com"
               variant="outlined"
-              style={{ width: "100%", magin: "20px 0" }}
+              style={{ margin: "20px 0", width: "100%" }}
             />
 
             <div className="grid grid-cols-2 gap-4 space-y-1">
@@ -81,6 +81,7 @@ export default function Profile() {
                 label="company"
                 defaultValue="Materially Inc."
                 variant="outlined"
+                style={{ width: "49%", margin: "1% 1%  1% 0" }}
               />
               <TextField
                 required
@@ -88,6 +89,7 @@ export default function Profile() {
                 label="country"
                 defaultValue="usa"
                 variant="outlined"
+                style={{ width: "49%", margin: "1% 1%  1% 0" }}
               />
 
               <TextField
@@ -96,6 +98,7 @@ export default function Profile() {
                 label="phone number"
                 defaultValue="4578-420-410 "
                 variant="outlined"
+                style={{ width: "49%", margin: "1% 1%  1% 0" }}
               />
               <TextField
                 required
@@ -103,6 +106,7 @@ export default function Profile() {
                 label="birthday"
                 defaultValue="02/01/2003"
                 variant="outlined"
+                style={{ width: "49%", margin: "1% 1%  1% 0" }}
               />
             </div>
 

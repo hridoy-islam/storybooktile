@@ -8,16 +8,13 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "storybook": "concurrently 'npm:watch:*'",
-    "watch:storybook": "storybook dev -p 6006",
-    "watch:tailwind": "npx tailwind -i ./src/index.css - o ./src/styles/tailwind.css",
-    "build-storybook": "npm build:tailwind && storybook build"
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@emotion/cache": "^11.9.3",
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
-    "@material-tailwind/react": "^2.1.9",
     "@material-ui/core": "^4.12.4",
     "@mui/icons-material": "^5.8.4",
     "@mui/lab": "^5.0.0-alpha.88",
@@ -43,7 +40,7 @@
     "react-redux": "^8.0.2",
     "react-router": "6.3.0",
     "react-router-dom": "6.3.0",
-    "react-scripts": "^5.0.1",
+    "react-scripts": "^3.0.1",
     "react-virtuoso": "^4.6.3",
     "redux": "^4.2.0",
     "yup": "^0.32.11"

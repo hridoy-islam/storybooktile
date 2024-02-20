@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": ".storybook/**/*",
+      "use": "@vercel/static-build"
+    }
+  ],
+  "routes": [{ "src": "/storybook/(.*)", "dest": "/storybook/index.html" }]
+}

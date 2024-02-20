@@ -22,15 +22,30 @@ export default function Billing() {
     createData("12877227695", "26 Feb 2021 9:16 am", "56.32", "Awaiting"),
   ];
   return (
-    <div className="container p-5">
-      <div className="flex gap-6 my-10">
+    <div className="container p-5" style={{ padding: "20px" }}>
+      <div
+        className="flex gap-6 my-10"
+        style={{
+          display: "flex",
+          gap: "20px",
+          margin: "20px 0",
+        }}
+      >
         <Card
-          style={{ backgroundColor: "#FBE9E7" }}
+          style={{
+            backgroundColor: "#FBE9E7",
+            width: "33%",
+            padding: "40px 24px",
+            borderLeft: "8px solid #D84315",
+          }}
           className="w-1/3 px-6 py-10 border-l-8 border-[#D84315] space-y-1"
         >
           <p className="text-md">Bill Due</p>
           <h2 className="text-2xl">$150.00</h2>
-          <p className="text-[#D84315] text-md flex items-center gap-3">
+          <p
+            className="text-[#D84315] text-md flex items-center gap-3"
+            style={{ display: "flex", alignItems: "center" }}
+          >
             <span>Pay Now </span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -52,12 +67,20 @@ export default function Billing() {
           </p>
         </Card>
         <Card
-          style={{ backgroundColor: "#FFF8E1" }}
+          style={{
+            backgroundColor: "#FFF8E1",
+            width: "33%",
+            padding: "40px 24px",
+            borderLeft: "8px solid #FFC107",
+          }}
           className="w-1/3 px-6 py-10 border-l-8 border-[#FFC107] space-y-1"
         >
           <p className="text-md">Total Credits</p>
           <h2 className="text-2xl">1570 GB</h2>
-          <p className="text-[#FFC107] text-md flex items-center gap-3">
+          <p
+            className="text-[#FFC107] text-md flex items-center gap-3"
+            style={{ display: "flex", alignItems: "center" }}
+          >
             <span>Full Report </span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -80,12 +103,20 @@ export default function Billing() {
         </Card>
 
         <Card
-          style={{ backgroundColor: "#B9F6CA" }}
+          style={{
+            backgroundColor: "#B9F6CA",
+            width: "33%",
+            padding: "40px 24px",
+            borderLeft: "8px solid #00C853",
+          }}
           className="w-1/3 px-6 py-10 border-l-8 border-[#00C853] space-y-1 shadow-none"
         >
           <p className="text-md">Plan</p>
           <h2 className="text-2xl">Basic</h2>
-          <p className="text-[#00C853] text-md flex items-center gap-3">
+          <p
+            className="text-[#00C853] text-md flex items-center gap-3"
+            style={{ display: "flex", alignItems: "center" }}
+          >
             <span>Upgrade </span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
